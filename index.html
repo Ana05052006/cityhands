@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Hands</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpeg" alt="City Hands Logo">
+                <div>
+                    <h1>City Hands</h1>
+                    <p class="tagline">O mundo em um toque</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Bem-vindo à City Hands</h2>
+            <p>Proporcionando as melhores experiências de localização para você. Descubra nossos serviços de aluguel de agências e pousadas, além da venda de ingressos para eventos exclusivos.</p>
+            <a href="#services" class="button">Explore Nossos Serviços</a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="https://i.pinimg.com/564x/aa/d6/6b/aad66b82b8cb9d3e69880e3017bbfad1.jpg" alt="Pousadas">
+                    <h3>Pousadas</h3>
+                    <a href="javascript:void(0);" onclick="toggleDetails('details-agencies')" class="button">Saber Mais</a>
+                    <div id="details-agencies" class="details" style="display: none;">Gerenciamento de reservas, desfrute de hotéis e pousadas de qualidade com sua segurança garantida.</div>
+                </div>
+                <div class="service-item">
+                    <img src="https://i.pinimg.com/564x/91/bc/3d/91bc3d8adfddaefa0c5df645da94b679.jpg" alt="Ingressos para Eventos">
+                    <h3>Ingressos</h3>
+                    <a href="javascript:void(0);" onclick="toggleDetails('details-tickets')" class="button">Saber Mais</a>
+                    <div id="details-tickets" class="details" style="display: none;">Encontre e compre os melhores ingressos para shows, musicais, festivais e eventos diversos. Uma ampla gama de variedade e segurança</div>
+                </div>
+                <div class="service-item">
+                    <img src="https://i.pinimg.com/564x/22/e5/08/22e508dff8313e0d80705b899d50b95e.jpg" alt="Restaurantes">
+                    <h3>Restaurantes</h3>
+                    <a href="javascript:void(0);" onclick="toggleDetails('details-restaurants')" class="button">Saber Mais</a>
+                    <div id="details-restaurants" class="details" style="display: none;">Encontre restaurantes de ótima qualidade e com uma enorme variedade de estilos e preços. Tudo simples e fácil pelo celular.</div>
+                </div>
+                <div class="service-item">
+                    <img src="https://i.pinimg.com/564x/5b/39/e6/5b39e61a768775db7ff740c7be0766fa.jpg" alt="Lazer">
+                    <h3>Lazer</h3>
+                    <a href="javascript:void(0);" onclick="toggleDetails('details-leisure')" class="button">Saber Mais</a>
+                    <div id="details-leisure" class="details" style="display: none;">Encontre lugares para se divertir, parques, circo, cinema, quadras poliestivas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>A City Hands é dedicada a fornecer soluções completas de localização para atender às suas necessidades. Nossa missão é oferecer conforto e conveniência, garantindo uma experiência excepcional para nossos clientes.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project-item">
+                <img src="services.jpeg" alt="Projeto 1">
+                <h3>Aplicativo de Localização Inteligente</h3>
+                <p>Aplicativo móvel que utiliza tecnologia de geolocalização para ajudar os usuários a encontrar serviços de aluguel de agências, pousadas, restaurantes e locais de entretenimento próximos com base em sua localização atual.</p>
+            </div>
+            <div style="margin-bottom: 5px;"></div>
+            <div class="project-item">
+                <img src="services_2.jpeg" alt="Projeto 2">
+                <h3>Plataforma de Venda de Ingressos Online</h3>
+                <p>Plataforma online para venda de ingressos para eventos, como shows, festivais e eventos esportivos. A plataforma  permitirá que os organizadores de eventos listem seus eventos e vendam ingressos diretamente aos consumidores.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contatos</h2>
+            <p>Entre em contato conosco através das seguintes plataformas:</p>
+            <ul>
+                <li><a href="mailto:city.hands.va@gmail.com">E-mail</a></li>
+                <li><a href="https://wa.me/558881029885" target="_blank">WhatsApp</a></li>
+                <li><a href="https://www.twitter.com/cityhands" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/cityhands_" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 City Hands. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
